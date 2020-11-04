@@ -11,20 +11,23 @@ body {
   height: 100%;
   background-image: url(../assets/building.jpg);
   background-size: 100%;
+  cursor:auto;
 }
 
 
 .arrow {
-  cursor: pointer; 
+  cursor: pointer;
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  left: 5%;
 }
 
 .arrow img {
   position: absolute;
-	overflow: hidden;
-  max-width: 100%;
-  max-height: 100%
+  max-width: 300%;
+  max-height: 300%
 }
-
 
 .arrow .arrow__up {
   z-index: 9999;
