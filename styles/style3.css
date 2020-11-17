@@ -1,0 +1,53 @@
+body {
+  font-family: Helvetica, sans-serif;
+  height: 100vh;
+  margin: 0;
+  font-size: 20px;
+}
+.container-main {
+  height: 100%;
+}
+
+.pictures {
+  height: 100%;
+  width: 30%;
+  position: absolute;
+  overflow: scroll;
+  float: left;
+  overflow-x: hidden;
+}
+
+.pictures img  {
+  max-width: 100%;
+}
+
+.info {
+  height: 70%;
+  float: right;
+  width: 20%;
+  padding:5%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.homepage{
+  position: fixed;
+  width: 170px;
+  right: 2%;
+  bottom: 0;
+  z-index: 20;
+}
+
+.homepage img{
+ max-width: 100%;
+}

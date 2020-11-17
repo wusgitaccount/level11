@@ -3,35 +3,40 @@ body {
   color: white;
   height: 100vh;
   margin: 0;
+}
 
-}
-.container {
-  width: 100%;
-  position:relative;
-}
-.module {
+.lvl11-container-1 {
   width: 65%;
-  position: absolute;
-  overflow: visible;
+  position: relative;
+  overflow: scroll;
   float: left;
+  overflow-x: hidden;
+    height: 100%;
 }
 
-.module img  {
+.lvl11-container-1 img  {
   max-width: 100%;
-  max-height: 100%
 }
 
-.info {
+.lvl11-container-2 {
   float: right;
   width: 20%;
-  position: relative;
-  overflow:hidden;
   padding:5%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  overflow: auto;
+  overflow-x: hidden;
 }
 
-.info img {
+.lvl11-container-2 img {
   max-width: 100%;
-  max-height: 100%
+}
+
+.lvl11-container-2--student {
+    font-family: 'PT Mono', monospace;
+    float: right;
+    width: 20%;
+    padding:5%;
 }
 
 .arrow {
@@ -64,28 +69,14 @@ body {
 .arrow:hover > .arrow__down{
   opacity:100;
 }
+.homepage{
+  position: fixed;
+  width: 170px;
+  right: 2%;
+  bottom: 0;
+  z-index: 20;
+}
 
-
-@media all and (max-width: 400px)
-{
-  .module  {
-  display: block;
-  float: left;
-  width: 40%;
-  }
-
-  .module img  {
-    max-width: 100%;
-    max-height: 100%
-  }
-
-  .info {
-    width: 50%;
-  }
-  .info img {
-    position: absolute;
-    max-width: 100%;
-    max-height: 100%
-  }
-
+.homepage img{
+ max-width: 100%;
 }
